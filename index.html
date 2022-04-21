@@ -12,10 +12,48 @@
  
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+
     <form id="survey-form">
-      <label for="fname">FName</label><br>
-      <input type="text" id="name" name="fname"><br>
+
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Name" required><br>
+
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+
+      <label id="number-label" for="number">Age (optional)</label><br>
+      <input type="number" id="number" name="number" placeholder="Age" min="12" max="75"><br>
+
+      <label for="options">Which option best describes your current role?</label><br>
+      <select name="options" id="dropdown">
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Full Time Leader">Full Time Leader</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select><br>
+
+      <label >Would you recommend freeCodeCamp to a friend?</label><br>
+      <input type="radio" id="definitely" name="recommendation" value="definitely"> Definitely<br>
+      <input type="radio" id="maybe" name="recommendation" value="maybe">May be<br>
+      <input type="radio" id="notsure" name="recommendation" value="notsure">Not Sure<br>
+
+      <label >What would you like to see improved? (Check all that apply)</label><br>
+      <input type="checkbox" id="Front_end_Projects" name="Front_end_Projects" value="Front_end_Projects">Front_end_Projects<br>
+      <input type="checkbox" id="Back_end_Projects" name="Back_end_Projects" value="Back_end_Projects">Back_end_Projects<br>
+      <input type="checkbox" id="Data_Visualization" name="Data_Visualization" value="Data Visualization">Data Visualization<br>
+      <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">Challenges<br>
+      <input type="checkbox" id="Open_Source_Community" name="Open_Source_Community" value="Open_Source_Community">Open_Source_Community<br>
+      <input type="checkbox" id="Gitter_Help_rooms" name="Gitter_Help_rooms" value="Gitter_Help_rooms">Gitter_Help_rooms<br>
+
     
+      <label>Any comments or suggestions?</label><br>
+      <textarea placeholder="Enter your comment here">
+
+      </textarea><br>
+
+      <button id="submit">Submit</button>
+
     </form> 
     <!--
 

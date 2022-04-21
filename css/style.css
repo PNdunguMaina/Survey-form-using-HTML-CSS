@@ -1,0 +1,30 @@
+#title{
+    text-align: center;
+    color: white;
+}
+#description{
+    text-align: center;
+    color: white;
+}
+#main{
+    background-color: lightblue;
+}
+#survey-form{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: auto;
+    display: solid;
+
+}
+#name{
+    width: 100%;
+}
+#email{
+    width: 100%; 
+}
+#number{
+    width: 100%;
+}
+#comments{
+    padding: 50px;
+}
